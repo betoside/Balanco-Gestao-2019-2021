@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'allerbold';
+    src: url('fonts/allerbold.eot');
+    src: url('fonts/allerbold.eot') format('embedded-opentype'),
+         url('fonts/allerbold.woff2') format('woff2'),
+         url('fonts/allerbold.woff') format('woff'),
+         url('fonts/allerbold.ttf') format('truetype'),
+         url('fonts/allerbold.svg#allerbold') format('svg');
+}

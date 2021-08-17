@@ -1,0 +1,77 @@
+* { margin: 0;  padding: 0;  box-sizing: border-box; }
+body { background: #525659; font-family: 'Lato', sans-serif; font-weight: 400; }
+
+/* 
+lato 
+Light 300
+Regular 400
+Regular 400 italic
+Black 900
+font-family: 'Lato', sans-serif;
+
+
+font-family: 'allerbold';
+*/
+
+header { margin-bottom: 30px;}
+header .container { 
+    height: 100vh; display: flex; flex-direction: column; background: #000;
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+}
+.datas { background-color: #000; font-size: 16px; color: #fff; height: 14.66%; display: flex;justify-content: center;align-items: center; }
+.sao-paulo { 
+    border-top: 1px solid #fff; 
+    border-bottom: 1px solid #fff; 
+    height: 21.94%; 
+    background: url(../images/bg-padrao.jpg) center no-repeat; 
+    background-size: cover;
+    display: flex;justify-content: center;align-items: center; flex-direction: column; 
+    text-align: center; 
+    padding: 20px 0;
+}
+.sao-paulo .font1 { font-weight: 900; font-size: 40px; text-transform: uppercase; color: #fff;}
+.sao-paulo .font2 { font-size: 20px; text-transform: uppercase; color: #fff;}
+.bandeira { text-align: center; }
+.logo-governo {height: 23.35%; display: flex;justify-content: center;align-items: center;flex-direction: column;}
+.faixa-cinza { height: 1.92%; background: #454647;}
+
+
+
+.template-padrao { 
+    max-width: 1100px; margin: 0 auto; 
+    background: url(../images/bg-padrao.jpg) center no-repeat; 
+    background-size: cover;
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+}
+.template-titulo { 
+    display: flex; justify-content: space-between; align-items: center; padding: 0 30px; height: 112px; 
+}
+.template-titulo .assunto { 
+    font-weight: bold; font-size: 83px; color: #2c2c2c; text-transform: uppercase;
+    text-shadow: 0 0 2px #fff; /* horizontal-offset vertical-offset 'blur' colour */
+    -moz-text-shadow: 0 0 2px #fff;
+    -webkit-text-shadow: 0 0 2px #fff;
+    display: flex; align-items: flex-end; height: 100%;
+}
+.template-imagem { 
+    height: 389px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.template-body { display: flex; justify-content: space-between; }
+.template-body .coluna-info { 
+    max-width: 48%; font-size: 23px; font-weight: 400; font-weight: 300; color: #fff; 
+    padding: 45px 50px 50px 20px;
+    /* border: 1px solid #000; */
+}
+.template-body .coluna-info strong { font-weight: 900; color: #4ac7f0;}
+.template-body .coluna-info .item { margin-bottom: 30px; display: flex; }
+.template-body .coluna-info .item .icone { width: 80px; text-align: center;}
+.template-body .coluna-info .item .icone * { max-width: 100%; }
+.template-body .coluna-info .item .texto { flex: 1; }
+
