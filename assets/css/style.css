@@ -54,7 +54,7 @@ header .container {
     .template-policia .template-titulo { margin-bottom: 20px; }
 
 .template-titulo .assunto { 
-    font-weight: bold; font-size: 83px; color: #2c2c2c; text-transform: uppercase;
+    font-weight: bold; font-size: 55px; color: #2c2c2c; text-transform: uppercase;
     text-shadow: 0 0 2px #fff; /* horizontal-offset vertical-offset 'blur' colour */
     -moz-text-shadow: 0 0 2px #fff;
     -webkit-text-shadow: 0 0 2px #fff;
