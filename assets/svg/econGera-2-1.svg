@@ -1,0 +1,15 @@
+<svg width="47px" viewBox="0 0 47 50.8" preserveAspectRatio="xMidYMid meet">
+<g>
+	<rect x="11.1" y="7.8" fill="#4AC8EF" width="2.3" height="11.1"/>
+	<rect x="7.1" y="12.1" fill="#4AC8EF" width="10.3" height="2.5"/>
+	<polygon fill="#4AC8EF" points="31.9,42.3 30.3,40.5 37.6,32.7 39.2,34.4 	"/>
+	<polygon fill="#4AC8EF" points="9.4,42.3 7.8,40.5 15,32.7 16.7,34.4 	"/>
+	<polygon fill="#4AC8EF" points="15,42.3 7.8,34.4 9.4,32.7 16.7,40.5 	"/>
+	<rect x="29.6" y="12.1" fill="#4AC8EF" width="10.3" height="2.5"/>
+	<rect x="1.1" y="24.2" fill="#4AC8EF" width="44.7" height="2.5"/>
+	<path fill="#4AC8EF" d="M5.7,2.5c-1.9,0-3.4,1.7-3.4,3.7v38.6c0,2,1.5,3.7,3.4,3.7h35.6c1.9,0,3.4-1.7,3.4-3.7V6.1
+		c0-2-1.5-3.7-3.4-3.7H5.7z M41.3,50.8H5.7c-3.1,0-5.7-2.8-5.7-6.1V6.1C0,2.8,2.5,0,5.7,0h35.6C44.5,0,47,2.8,47,6.1v38.6
+		C47,48.1,44.5,50.8,41.3,50.8"/>
+	<rect x="22.4" y="1.2" fill="#4AC8EF" width="2.3" height="48.4"/>
+</g>
+</svg>

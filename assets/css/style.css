@@ -49,20 +49,39 @@ header .container {
     margin-bottom: 30px;
 }
 .template-titulo { 
-    display: flex; justify-content: space-between; align-items: center; padding: 0 30px; height: 112px; 
+    display: flex; justify-content: space-between; align-items: center; padding: 0 30px; min-height: 112px; 
 }
+    .template-policia .template-titulo { margin-bottom: 20px; }
+
 .template-titulo .assunto { 
     font-weight: bold; font-size: 83px; color: #2c2c2c; text-transform: uppercase;
     text-shadow: 0 0 2px #fff; /* horizontal-offset vertical-offset 'blur' colour */
     -moz-text-shadow: 0 0 2px #fff;
     -webkit-text-shadow: 0 0 2px #fff;
     display: flex; align-items: flex-end; height: 100%;
+    /* width: 50%; */
 }
+    
+    .template-ecoGeraEmpre .template-titulo .assunto { font-size: 43px; }
+    .template-ciencia-tec .template-titulo .assunto { font-size: 43px; }
+
 .template-imagem { 
     height: 389px; 
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
+
+    .template-policia .template-imagem { height: 430px; margin-right: 250px; margin-bottom: 40px; }
+    .template-policia .celular { position: absolute; right: -190px; top: -30px; }
+
+    .template-imagem .nota,
+    .template-ecoGeraEmpre .nota { 
+        position: absolute; right: 0;bottom: 0; width: 50%;
+        padding: 20px 50px; background: rgba(255,255,255,0.5 ); font-weight: 900; 
+    }
+
 .template-body { display: flex; justify-content: space-between; }
 .template-body .coluna-info { 
     max-width: 48%; font-size: 23px; font-weight: 400; font-weight: 300; color: #fff; 
@@ -74,4 +93,10 @@ header .container {
 .template-body .coluna-info .item .icone { width: 80px; text-align: center;}
 .template-body .coluna-info .item .icone * { max-width: 100%; }
 .template-body .coluna-info .item .texto { flex: 1; }
+
+    .template-ciencia-tec .template-body .coluna-info .item .icone { width: 100px; padding-right: 10px;}
+    .template-body .coluna-info .item-ciencia-tec1 { flex-direction: column; padding-left: 80px; }
+    .template-ciencia-tec .template-body .coluna-info .item-ciencia-tec1 .icone { width: 100%; text-align: left; margin-bottom: 20px; }
+
+
 
