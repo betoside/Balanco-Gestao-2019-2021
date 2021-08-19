@@ -49,17 +49,17 @@ header .container {
     margin-bottom: 30px;
 }
 .template-titulo { 
-    display: flex; justify-content: space-between; align-items: center; padding: 0 30px; min-height: 112px; 
+    display: flex; justify-content: space-between; align-items: center; padding: 20px 30px; min-height: 112px; 
 }
     .template-policia .template-titulo { margin-bottom: 20px; }
 
 .template-titulo .assunto { 
     font-weight: bold; font-size: 55px; color: #2c2c2c; text-transform: uppercase;
-    text-shadow: 0 0 2px #fff; /* horizontal-offset vertical-offset 'blur' colour */
-    -moz-text-shadow: 0 0 2px #fff;
-    -webkit-text-shadow: 0 0 2px #fff;
+    text-shadow: 1px 1px 5px #fff; /* horizontal-offset vertical-offset 'blur' colour */
+    -moz-text-shadow: 1px 1px 5px #fff;
+    -webkit-text-shadow: 1px 1px 5px #fff;
     display: flex; align-items: flex-end; height: 100%;
-    /* width: 50%; */
+    width: 60%;
 }
     
     .template-ecoGeraEmpre .template-titulo .assunto { font-size: 43px; }
@@ -71,16 +71,19 @@ header .container {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    margin-left: 2px; margin-right: 2px;
 }
 
     .template-policia .template-imagem { height: 430px; margin-right: 250px; margin-bottom: 40px; }
     .template-policia .celular { position: absolute; right: -190px; top: -30px; }
+    .logo-servico { position: absolute; top: 48px; left: 35px;}
 
     .template-imagem .nota,
-    .template-ecoGeraEmpre .nota { 
-        position: absolute; right: 0;bottom: 0; width: 50%;
-        padding: 20px 50px; background: rgba(255,255,255,0.5 ); font-weight: 900; 
-    }
+    .template-ecoGeraEmpre .nota {  position: absolute; right: 0;bottom: 0; width: 50%; padding: 20px 50px; background: rgba(255,255,255,0.5 ); font-weight: 900; }
+    .template-assistencia1 .template-imagem { height: 493px; }
+    .logo-servico-bomPrato { position: absolute; top:unset; bottom: 17px; left: 45px; }
+    .template-habitacao .template-imagem { height: 576px; }
+    .template-transporte .template-imagem { height: 539px; }
 
 .template-body { display: flex; justify-content: space-between; }
 .template-body .coluna-info { 
@@ -93,10 +96,20 @@ header .container {
 .template-body .coluna-info .item .icone { width: 80px; text-align: center;}
 .template-body .coluna-info .item .icone * { max-width: 100%; }
 .template-body .coluna-info .item .texto { flex: 1; }
+.pr10 {padding-right: 10px;}
 
     .template-ciencia-tec .template-body .coluna-info .item .icone { width: 100px; padding-right: 10px;}
     .template-body .coluna-info .item-ciencia-tec1 { flex-direction: column; padding-left: 80px; }
     .template-ciencia-tec .template-body .coluna-info .item-ciencia-tec1 .icone { width: 100%; text-align: left; margin-bottom: 20px; }
 
+.template-footer { display: flex; flex-direction: column;}
+.template-footer .expediente {color: #47c7ef; font-size: 20px;text-align: center; line-height: 180%;padding: 100px 0 50px;}
+.template-footer .expediente p {font-weight: bold; font-size: 25px;}
+
+.template-footer .codebar {text-align: center; padding: 50px 0;}
+.template-footer .codebar a {color: #fff;font-size: 40px;}
+.template-footer .redessociais { text-align: center; padding: 50px 0; }
+.template-footer .redessociais p {color: #fff;font-size: 20px; padding: 15px 0;}
+.template-footer .redessociais a {color: #fff;font-size: 30px;}
 
 
