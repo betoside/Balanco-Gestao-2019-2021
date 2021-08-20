@@ -1,16 +1,14 @@
 * { margin: 0;  padding: 0;  box-sizing: border-box; }
 body { background: #525659; font-family: 'Lato', sans-serif; font-weight: 400; }
-
 /* 
-lato 
-Light 300
-Regular 400
-Regular 400 italic
-Black 900
-font-family: 'Lato', sans-serif;
+    lato 
+    Light 300
+    Regular 400
+    Regular 400 italic
+    Black 900
+    font-family: 'Lato', sans-serif;
 
-
-font-family: 'allerbold';
+    font-family: 'allerbold';
 */
 
 header { margin-bottom: 30px;}
@@ -35,9 +33,26 @@ header .container {
 .sao-paulo .font2 { font-size: 20px; text-transform: uppercase; color: #fff;}
 .bandeira { text-align: center; }
 .logo-governo {height: 23.35%; display: flex;justify-content: center;align-items: center;flex-direction: column;}
+
+
+    @keyframes arrow {
+        0% { bottom: 20px; }
+        50% { bottom: 30px; }
+        100% { bottom: 20px; }
+    }
+    .down-box {
+        position: absolute;
+        left: 30px;
+        bottom: 20px;
+        animation-name: arrow;
+        animation-duration: 2s;
+        animation-iteration-count: 7;
+    }
+    .down-box a { color: #47c7ef; text-decoration: none; }
+    .down-box a span { display: block; font-size: 12px; text-align: center;padding-bottom: 6px; }
+    
+
 .faixa-cinza { height: 1.92%; background: #454647;}
-
-
 
 .template-padrao { 
     max-width: 1100px; margin: 0 auto; 
@@ -59,11 +74,15 @@ header .container {
     -moz-text-shadow: 1px 1px 5px #fff;
     -webkit-text-shadow: 1px 1px 5px #fff;
     display: flex; align-items: flex-end; height: 100%;
-    width: 60%;
+    width: 75%;
+    padding-left: 70px;
 }
     
     .template-ecoGeraEmpre .template-titulo .assunto { font-size: 43px; }
     .template-ciencia-tec .template-titulo .assunto { font-size: 43px; }
+    .template-topo .template-titulo,
+    .template-expediente .template-titulo { min-height: initial; height: 0; padding: 0; text-indent: -9999px; overflow: hidden; visibility: hidden; }
+
 
 .template-imagem { 
     height: 389px; 
@@ -107,9 +126,72 @@ header .container {
 .template-footer .expediente p {font-weight: bold; font-size: 25px;}
 
 .template-footer .codebar {text-align: center; padding: 50px 0;}
-.template-footer .codebar a {color: #fff;font-size: 40px;}
+.template-footer .codebar a {color: #fff;font-size: 40px; text-decoration: none;}
 .template-footer .redessociais { text-align: center; padding: 50px 0; }
 .template-footer .redessociais p {color: #fff;font-size: 20px; padding: 15px 0;}
-.template-footer .redessociais a {color: #fff;font-size: 30px;}
+.template-footer .redessociais a {color: #fff;font-size: 30px; text-decoration: none;}
 
+.exemplo {
+    animation-name: arrow;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+@keyframes arrowUp {
+    0% { bottom: 15px; }
+    50% { bottom: 20px; }
+    100% { bottom: 15px; }
+}
+.botao-topo {
+    background-color: rgba(4, 61, 91, 0.7);
+    color: #4ac7f0;
+    padding: 5px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+    z-index: 1;
+    transition:all ease .2s;
+    display: none;
+    text-align: center;
+    /* 
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count:2;
+    */
+}
+/* .botao-topo:hover { animation-play-state: running; } */
 
+.menu-mobile {
+    width: 40px; height: 40px;
+    position: fixed; top: 23px; left: 25px;z-index: 2;
+    display: flex; flex-direction: column; justify-content: space-around;
+    cursor: pointer;
+}
+.mm-line { height: 3px; background-color: #47c7ef; }
+.menu {                
+    background-color: rgba(4, 61, 91, 0.9);
+    width: 0vw;
+    height: 100vh;
+    transition:all ease .2s;
+    overflow:hidden;
+    position: fixed;
+    top: 0; left: 0;
+    color: #fff;
+    z-index: 1;
+    padding-top: 90px;
+}
+.menu.show { width: 30vw; }
+.menu a {
+    display: block; max-width: 100%; min-width: 230px;
+    padding: 5px 10px 7px;
+    margin: 0px 20px 0;
+    color: #fff; font-size: 13px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-transform: capitalize;
+}
+.menu a:hover {
+    color: #fff;
+    background: #000;
+    border-bottom: 1px solid rgba(255, 255, 0, 0.473);
+}
