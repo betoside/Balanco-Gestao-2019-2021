@@ -32,6 +32,7 @@ header .container {
 .sao-paulo .font1 { font-weight: 900; font-size: 40px; text-transform: uppercase; color: #fff;}
 .sao-paulo .font2 { font-size: 20px; text-transform: uppercase; color: #fff;}
 .bandeira { text-align: center; }
+.bandeira img { max-width: 100%; }
 .logo-governo {height: 23.35%; display: flex;justify-content: center;align-items: center;flex-direction: column;}
 
 
@@ -82,6 +83,8 @@ header .container {
     .template-ciencia-tec .template-titulo .assunto { font-size: 43px; }
     .template-topo .template-titulo,
     .template-expediente .template-titulo { min-height: initial; height: 0; padding: 0; text-indent: -9999px; overflow: hidden; visibility: hidden; }
+
+.template-titulo .logo img { max-width: 100%; }
 
 
 .template-imagem { 
@@ -194,4 +197,102 @@ header .container {
     color: #fff;
     background: #000;
     border-bottom: 1px solid rgba(255, 255, 0, 0.473);
+}
+
+
+
+@media (max-width: 768px) {
+
+    .menu.show { width: 35vw; }
+    .template-imagem .nota, .template-ecoGeraEmpre .nota {
+        width: 60%;
+        padding: 20px 40px;
+    }
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    .datas {
+        height: 11.66%;
+    }
+
+    .sao-paulo {
+        height: 24.94%;
+    }
+
+
+    .template-padrao { 
+        box-shadow: none; 
+        /* overflow: hidden; */
+    }
+
+    .menu.show {
+        width: 65vw;
+    }
+    .template-imagem {
+        height: 160px;
+    }
+    .template-titulo {
+        padding: 20px 15px;
+    }
+    .template-titulo .assunto {
+        font-size: 21px;
+        width: 75%;
+        padding-left: 60px;
+    }
+
+    .template-ecoGeraEmpre .template-titulo .assunto,
+    .template-ciencia-tec .template-titulo .assunto { font-size: 17px; }
+
+
+    .sao-paulo .font1 {
+        font-size: 25px;
+    }
+    .sao-paulo .font2 {
+        font-size: 13px;
+    } 
+
+    .logo-governo img { max-height: 80px; }
+
+    .menu-mobile {
+        width: 30px;
+        height: 30px;
+        left: 20px;
+        top: 18px;
+
+    }
+    .template-titulo .logo img {
+        max-width: 62px;
+    }
+
+    .template-body {
+        flex-direction: column;
+        padding: 45px 50px 50px 20px;
+    }
+
+    .template-body .coluna-info {
+        max-width: 100%;
+        /* padding-right: 40px; */
+        font-size: 17px;
+        padding: 0;
+    }
+
+    .template-footer .expediente p {
+        font-size: 20px;
+    }
+    .template-footer .expediente {
+        font-size: 13px;
+        padding: 50px 0 20px;
+    }
+
+    .template-footer .redessociais svg {
+        width: 30px;
+    }
+
+
+    .botao-topo svg { width: 30px; }
+
 }
